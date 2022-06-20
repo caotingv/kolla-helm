@@ -33,6 +33,18 @@ entries:
     version: 1.0.0
   common:
   - apiVersion: v2
+    created: "2022-06-20T10:38:19.815008346Z"
+    description: Openstack kolla helm common library
+    digest: a0276ba561c62f42490d264382240110824808480434be230a3f353748612b4c
+    home: https://github.com/kungze/kolla-helm
+    maintainers:
+    - name: Kungze
+    name: common
+    type: library
+    urls:
+    - https://github.com/caotingv/kolla-helm/releases/download/common-1.0.3/common-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v2
     created: "2022-05-27T05:42:51.185653855Z"
     description: Openstack kolla helm common library
     digest: 4e2a49a2705781c1e9d7279959cfd1a00b900316e883749810b877264447820e
@@ -184,4 +196,4 @@ entries:
     urls:
     - https://github.com/kungze/kolla-helm/releases/download/password-1.0.0/password-1.0.0.tgz
     version: 1.0.0
-generated: "2022-06-16T10:00:44.257480984Z"
+generated: "2022-06-20T10:38:19.815039648Z"
