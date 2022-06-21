@@ -37,4 +37,3 @@ subjects:
     name: {{ .Values.ceph.serviceAccountName}}
     namespace: {{ .Release.Namespace | quote }}
 {{- end }}
-
