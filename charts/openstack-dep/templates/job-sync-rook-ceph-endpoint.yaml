@@ -43,4 +43,3 @@ spec:
             defaultMode: 0755
             name: sync-ceph-endpoint-cm
 {{- end }}
-
