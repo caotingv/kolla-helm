@@ -128,5 +128,9 @@ memcached:
 
 ## Ceph configuration
 ceph:
-  ## @param ceph.enabled Whether or not deploy ceph
+  ## @param ceph.enabled [t#Enable Ceph] Whether or not enable ceph backend
   enabled: true
+  ## @param ceph.cephClusterNamespace [t#Rook Ceph Cluster Namespace] The k8s namespace of rook cephcluster
+  cephClusterNamespace: rook-ceph
+  ## @param ceph.cephClusterName [t#Rook Ceph Cluster Name] The rook cephcluster name
+  cephClusterName: rook-ceph
