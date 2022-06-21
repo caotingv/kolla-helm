@@ -14,6 +14,10 @@
 ## @param clusterDomainSuffix [t#Cluser domain suffix] The domain suffix of of the current k8s cluser
 clusterDomainSuffix: cluster.local
 
+## @section Deployment Parameters
+## @param serviceAccountName ServiceAccount name
+serviceAccountName: openstack-dep
+
 ## @section Ingress parameters
 ## nginx-ingress-controller chart configuration
 ## ref: https://github.com/bitnami/charts/blob/master/bitnami/nginx-ingress-controller/values.yaml
