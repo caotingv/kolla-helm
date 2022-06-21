@@ -11,7 +11,10 @@ jobs:
 
       - name: Fetch history
         run: git fetch --prune --unshallow
-
+      - name: Add dep chart repos
+        run: | 
+          helm repo add helm-cao https://caotingv.github.io/kolla-helm
+          
       - name: Set up chart-testing
         uses: helm/chart-testing-action@v2.2.1
 
