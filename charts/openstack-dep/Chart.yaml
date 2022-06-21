@@ -34,3 +34,6 @@ dependencies:
     name: nginx-ingress-controller
     repository: https://charts.bitnami.com/bitnami
     version: 9.x.x
+  - name: common
+    repository: https://kungze.github.io/kolla-helm
+    version: 1.x.x
