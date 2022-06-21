@@ -47,7 +47,7 @@ spec:
             name: pod-tmp
           - mountPath: /tmp/sync-ceph-secrets.py
             name: {{ printf "%s-bin" $serviceName | quote }}
-            subPath: sync-ceph-secrets.py
+            subPath: sync-ceph-cm-secrets.py
       restartPolicy: OnFailure
       serviceAccount: {{ $envAll.Values.serviceAccountName}}
       serviceAccountName: {{ $envAll.Values.serviceAccountName}}
