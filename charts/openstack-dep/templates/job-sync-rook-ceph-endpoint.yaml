@@ -4,7 +4,6 @@ kind: Job
 metadata:
   name: sync-rook-ceph-endpoint
   namespace: {{ .Release.Namespace }}
-  labels: {{ include "common.labels.standard" . }}
 spec:
   template:
     spec:
