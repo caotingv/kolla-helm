@@ -47,6 +47,11 @@ function use_local_disk_for_integration_test() {
   cat /etc/fstab || true
 }
 
+function create_virt_interface_test(){
+  sudo /usr/sbin/ip link add link eth0 name eth1 type bridge
+}
+
+
 FUNCTION="$1"
 shift # remove function arg now that we've recorded it
 # call the function with the remainder of the user-provided args
