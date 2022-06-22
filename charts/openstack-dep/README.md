@@ -47,9 +47,16 @@ type: Opaque
 
 ### Global Parameters
 
-| Name                  | Form title           | Description                                    | Value           |
-| --------------------- | -------------------- | ---------------------------------------------- | --------------- |
-| `clusterDomainSuffix` | Cluser domain suffix | The domain suffix of of the current k8s cluser | `cluster.local` |
+| Name                 | Form title           | Description                                    | Value           |
+| -------------------- | -------------------- | ---------------------------------------------- | --------------- |
+| `clusterDomainSuffix`| Cluser domain suffix | The domain suffix of of the current k8s cluser | `cluster.local` |
+
+
+### Deployment Parameters
+
+| Name                   | Form title              | Description                                    | Value           |
+| ---------------------- | ----------------------- | ---------------------------------------------- | --------------- |
+| `serviceAccountName`   | ServiceAccount name     | The k8s ServiceAccount name used by this chart | `openstack-dep` |
 
 
 ### Ingress parameters
@@ -99,6 +106,13 @@ type: Opaque
 | `memcached.enabled`      | Memcached  | Whether or not deploy memcached | `true`  |
 | `memcached.service.port` |            | Memcached service port          | `11211` |
 
+### Ceph parameters
+
+| Name                         | Form title                       | Description                     | Value   |
+| ---------------------------- | -------------------------------- | ------------------------------- | --------------- |
+| `ceph.enabled`               | ceph                             | Whether or not deploy ceph      | `true`          |
+| `ceph.cephClusterNamespace`  | Rook Ceph Cluster Namespace      | The k8s namespace of rook       | `rook-ceph`     |
+| `ceph.cephClusterName`       | Rook Ceph Cluster Name           | The rook cephcluster            | `rook-ceph`     |
 
 [mariadb]: https://github.com/bitnami/charts/tree/master/bitnami/mariadb
 [rabbitmq]: https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq
