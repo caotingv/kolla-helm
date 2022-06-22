@@ -125,3 +125,15 @@ memcached:
   service:
     ## @param memcached.service.port Memcached service port
     port: 11211
+
+## Ceph configuration
+ceph:
+  ## @param ceph.enabled [t#Enable Ceph] Whether or not enable ceph backend
+  enabled: true
+  ## @param ceph.cephClusterNamespace [t#Rook Ceph Cluster Namespace] The k8s namespace of rook cephcluster
+  cephClusterNamespace: rook-ceph
+  ## @param ceph.cephClusterName [t#Rook Ceph Cluster Name] The rook cephcluster name
+  cephClusterName: rook-ceph
+  ## @param ceph.serviceAccountName Used to access other namespace
+  serviceAccountName: openstack-dev
+
