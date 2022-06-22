@@ -52,6 +52,7 @@ type: Opaque
 | `clusterDomainSuffix`| Cluser domain suffix | The domain suffix of of the current k8s cluser | `cluster.local` |
 | `serviceAccountName` |                      | ServiceAccount name                            | `openstack-dep` |
 
+
 ### Ingress parameters
 
 | Name                                    | Form title               | Description                                                                                                              | Value       |

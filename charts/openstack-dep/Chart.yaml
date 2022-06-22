@@ -34,3 +34,4 @@ dependencies:
     name: nginx-ingress-controller
     repository: https://charts.bitnami.com/bitnami
     version: 9.x.x
+
