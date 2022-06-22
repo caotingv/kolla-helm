@@ -32,8 +32,8 @@ spec:
             name: sync-ceph-endpoint-cm
             subPath: sync-ceph-endpoint.py
       restartPolicy: OnFailure
-      serviceAccount: {{ .Values.ceph.serviceAccountName}}
-      serviceAccountName: {{ .Values.ceph.serviceAccountName}}
+      serviceAccount: {{ .Values.serviceAccountName}}
+      serviceAccountName: {{ .Values.serviceAccountName}}
       volumes:
         - emptyDir: {}
           name: pod-tmp
