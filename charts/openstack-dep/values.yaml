@@ -134,6 +134,6 @@ ceph:
   cephClusterNamespace: rook-ceph
   ## @param ceph.cephClusterName [t#Rook Ceph Cluster Name] The rook cephcluster name
   cephClusterName: rook-ceph
-  ## @param ceph.serviceAccountName Used to access other namespace
+  ## @param ceph.serviceAccountName [t#Access Rook Ceph Cluster serviceAccountName] Used to access other namespace
   serviceAccountName: openstack-dev
 
