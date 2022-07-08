@@ -45,4 +45,4 @@ The parameters ``passwordRelease`` and  ``openstackDepRelease`` are required, ``
 helm install openstack-cinder kolla-helm/cinder --set ceph.enabled=false,passwordRelease=openstack-password,openstackDepRelease=openstack-dependency,keystoneRelease=openstack-keystone
 ```
 
-Because of cinder depend on keystone, so the parameter ``keystoneRelease`` is required, it used to specify the release of ``kolla-helm/keystone``. Note: The cinder's ceph backend dependent on [rook ceph cluster](https://rook.io/docs/rook/v1.9/Getting-Started/intro/), if you want enable ceph backend, you need to use rook manage the ceph cluster or create a ceph cluster in advance.
+Because of cinder depend on keystone, so the parameter ``keystoneRelease`` is required, it used to specify the release of ``kolla-helm/keystone``. Note: The cinder's ceph backend dependent on [rook ceph cluster](https://rook.io/docs/rook/v1.9/Getting-Started/intro/), if you want enable ceph backend, you need to use rook manage the ceph cluster or create a ceph cluster in advance. 
