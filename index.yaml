@@ -211,6 +211,22 @@ entries:
     urls:
     - https://github.com/kungze/kolla-helm/releases/download/openstack-dep-1.0.0/openstack-dep-1.0.0.tgz
     version: 1.0.0
+  neutron:
+  - apiVersion: v2
+    created: "2022-07-08T09:27:58.872414261Z"
+    dependencies:
+    - name: common
+      repository: https://kungze.github.io/kolla-helm
+      version: 1.x.x
+    description: Openstack neutron service
+    digest: 245507572b90ecda4bb630b15c4ba750bee306daa4a764488ac0c58ff4ec6af5
+    home: https://github.com/kungze/kolla-helm
+    maintainers:
+    - name: Kungze
+    name: neutron
+    urls:
+    - https://github.com/caotingv/kolla-helm/releases/download/neutron-1.0.0/neutron-1.0.0.tgz
+    version: 1.0.0
   openstack-dep:
   - apiVersion: v2
     created: "2022-06-22T01:25:30.361834637Z"
@@ -252,4 +268,4 @@ entries:
     urls:
     - https://github.com/kungze/kolla-helm/releases/download/password-1.0.0/password-1.0.0.tgz
     version: 1.0.0
-generated: "2022-06-22T01:25:30.361922438Z"
+generated: "2022-07-08T09:27:58.995484237Z"
