@@ -56,9 +56,9 @@ enabled_notification: false
 networkPlugins:
   external_interface: eth1
   linux_bridge: 
-    enabled: false
-  ovs:
     enabled: true
+  ovs:
+    enabled: false
     tunnel_interface: eth0
 
 ## @section Ingress Parameters
