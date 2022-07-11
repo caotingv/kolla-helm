@@ -57,6 +57,7 @@ networkPlugins:
   external_interface: eth1
   linux_bridge: 
     enabled: true
+    
   ovs:
     enabled: false
     tunnel_interface: eth0
